@@ -7,9 +7,9 @@ body {
     color: #006078;
     line-height: 1.6;
     scroll-behavior: smooth;
-  }
-  
-  header {
+}
+
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -20,112 +20,111 @@ body {
     align-items: center;
     color: #FAEFED;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 1.8rem;
     font-weight: bold;
     animation: fadeIn 1s ease-in-out;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: #FAEFED;
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #FFD4D1;
     transform: scale(1.1);
-  }
-  
-  main {
+}
+
+main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem 1rem;
-  }
-  
-  .section {
+}
+
+.section {
     padding: 3rem 1rem;
     text-align: center;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2.5rem;
     color: #E37C78;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: slideIn 1s ease-out;
-  }
-  
-  .gallery {
+}
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
-  }
-  
-  .gallery img {
+}
+
+.gallery img {
     width: 100%;
     border: 5px solid #FFD4D1;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.4s, box-shadow 0.4s;
-  }
-  
-  .gallery img:hover {
+}
+
+.gallery img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #82BAC4;
     color: #FAEFED;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
     font-size: 1rem;
-  }
-  
-  .footer a {
+}
+
+.footer a {
     color: #FFD4D1;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-  }
-  
-  .footer a:hover {
+}
+
+.footer a:hover {
     color: #E37C78;
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
+}
+
+/* Animations */
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     from {
-      opacity: 0;
-      transform: translateX(-30px);
+        opacity: 0;
+        transform: translateX(-30px);
     }
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  
+}

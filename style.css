@@ -77,6 +77,8 @@ main {
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: slideIn 1s ease-out;
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: anywhere; /* Ensure long titles break to fit the screen */
 }
 
 .gallery {
@@ -151,6 +153,11 @@ main {
         flex-direction: column; /* Stack header content vertically */
         align-items: center;
         padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        padding: 0 1rem; /* Add some padding to keep text within bounds */
     }
 
     .nav-links {

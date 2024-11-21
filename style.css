@@ -1,8 +1,8 @@
 /* General Styles */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Swanky+and+Moo+Moo&family=The+Girl+Next+Door&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif; /* Modern and clean font for body */
+    font-family: 'The Girl Next Door', cursive; /* Friendly font for body text */
     margin: 0;
     padding: 0;
     background: linear-gradient(180deg, #FAEFED, #FFD4D1);
@@ -12,7 +12,6 @@ body {
 }
 
 header {
-    font-family: 'Playfair Display', serif; /* Elegant font for header and branding */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -26,8 +25,8 @@ header {
 }
 
 .logo {
-    font-size: 2rem; /* Slightly larger for emphasis */
-    font-weight: 700;
+    font-size: 2rem; /* Highlight logo with size */
+    font-family: 'Swanky and Moo Moo', cursive; /* Playful font for the logo */
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -38,11 +37,11 @@ header {
 }
 
 .nav-links a {
-    font-family: 'Roboto', sans-serif; /* Matches body text */
     text-decoration: none;
     color: #FAEFED;
-    font-weight: 400; /* Lightweight for simplicity */
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'The Girl Next Door', cursive; /* Approachable font for navigation */
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -63,10 +62,10 @@ main {
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif; /* Adds elegance to headings */
-    font-size: 2.8rem; /* Slightly larger for visual impact */
+    font-size: 2.8rem;
     color: #E37C78;
     margin-bottom: 2rem;
+    font-family: 'Mali', cursive; /* Clean and elegant font for titles */
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: slideIn 1s ease-out;
@@ -95,17 +94,16 @@ main {
 }
 
 .footer {
-    font-family: 'Roboto', sans-serif; /* Simple and modern */
     background-color: #82BAC4;
     color: #FAEFED;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
     font-size: 1rem;
+    font-family: 'The Girl Next Door', cursive; /* Friendly font for footer */
 }
 
 .footer a {
-    font-family: 'Roboto', sans-serif; /* Matches footer text */
     color: #FFD4D1;
     text-decoration: none;
     font-weight: bold;

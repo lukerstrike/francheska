@@ -1,6 +1,8 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Modern and clean font for body */
     margin: 0;
     padding: 0;
     background: linear-gradient(180deg, #FAEFED, #FFD4D1);
@@ -10,6 +12,7 @@ body {
 }
 
 header {
+    font-family: 'Playfair Display', serif; /* Elegant font for header and branding */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,8 +26,8 @@ header {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem; /* Slightly larger for emphasis */
+    font-weight: 700;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -35,9 +38,11 @@ header {
 }
 
 .nav-links a {
+    font-family: 'Roboto', sans-serif; /* Matches body text */
     text-decoration: none;
     color: #FAEFED;
-    font-weight: bold;
+    font-weight: 400; /* Lightweight for simplicity */
+    font-size: 1rem;
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -58,13 +63,15 @@ main {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif; /* Adds elegance to headings */
+    font-size: 2.8rem; /* Slightly larger for visual impact */
     color: #E37C78;
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     animation: slideIn 1s ease-out;
 }
+
 .gallery {
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
@@ -87,8 +94,8 @@ main {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-
 .footer {
+    font-family: 'Roboto', sans-serif; /* Simple and modern */
     background-color: #82BAC4;
     color: #FAEFED;
     text-align: center;
@@ -98,6 +105,7 @@ main {
 }
 
 .footer a {
+    font-family: 'Roboto', sans-serif; /* Matches footer text */
     color: #FFD4D1;
     text-decoration: none;
     font-weight: bold;

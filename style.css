@@ -65,16 +65,17 @@ main {
     letter-spacing: 2px;
     animation: slideIn 1s ease-out;
 }
-
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Space between images */
+    align-items: center; /* Center the images horizontally */
     padding: 1rem;
 }
 
 .gallery img {
-    width: 100%;
+    width: 100%; /* Make images fill container's width */
+    max-width: 800px; /* Limit the maximum width */
     border: 5px solid #FFD4D1;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -82,9 +83,10 @@ main {
 }
 
 .gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slight hover effect */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
+
 
 .footer {
     background-color: #82BAC4;

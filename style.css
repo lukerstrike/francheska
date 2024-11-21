@@ -28,12 +28,15 @@ header {
     font-size: 2rem; /* Highlight logo with size */
     font-family: 'Swanky and Moo Moo', cursive; /* Playful font for the logo */
     animation: fadeIn 1s ease-in-out;
+    flex: 1; /* Take up space to push nav to the right */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    flex: 1; /* Space for the nav links */
+    justify-content: flex-end;
 }
 
 .nav-links a {
@@ -72,16 +75,16 @@ main {
 }
 
 .gallery {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    gap: 2rem; /* Space between images */
-    align-items: center; /* Center the images horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
     padding: 1rem;
 }
 
 .gallery img {
-    width: 100%; /* Make images fill container's width */
-    max-width: 800px; /* Limit the maximum width */
+    width: 100%;
+    max-width: 800px;
     border: 5px solid #FFD4D1;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -89,7 +92,7 @@ main {
 }
 
 .gallery img:hover {
-    transform: scale(1.1); /* Slight hover effect */
+    transform: scale(1.1);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -100,7 +103,7 @@ main {
     padding: 2rem 1rem;
     margin-top: 2rem;
     font-size: 1rem;
-    font-family: 'The Girl Next Door', cursive; /* Friendly font for footer */
+    font-family: 'The Girl Next Door', cursive;
 }
 
 .footer a {
@@ -134,5 +137,41 @@ main {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .gallery img {
+        max-width: 100%; /* Ensure images scale down for smaller screens */
+    }
+
+    footer {
+        font-size: 0.9rem;
     }
 }

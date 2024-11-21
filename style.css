@@ -3,84 +3,123 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FAEFED;
+    background: linear-gradient(180deg, #FAEFED, #FFD4D1);
     color: #006078;
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
   
   header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #E37C78;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #FAEFED;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .nav-links a {
     text-decoration: none;
     color: #FAEFED;
     font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
   }
   
   .nav-links a:hover {
-    text-decoration: underline;
+    color: #FFD4D1;
+    transform: scale(1.1);
   }
   
   .section {
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #E37C78;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-out;
   }
   
   .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
   }
   
   .gallery img {
-    width: calc(33% - 1rem);
-    border: 3px solid #FFD4D1;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    border: 5px solid #FFD4D1;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s, box-shadow 0.4s;
   }
   
   .gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   }
   
   .footer {
     background-color: #82BAC4;
     color: #FAEFED;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
   }
   
   .footer a {
     color: #FFD4D1;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
   }
   
   .footer a:hover {
-    text-decoration: underline;
+    color: #E37C78;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
   
